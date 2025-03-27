@@ -1,0 +1,197 @@
+/* Obecné nastavení */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: url('0.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Navigace */
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #f2d22e;
+}
+
+/* Přepínač světlý/tmavý režim */
+nav button#theme-toggle {
+    background-color: #f2d22e;
+    color: #000;
+    border: none;
+    padding: 7px 15px;
+    margin-left: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+nav button#theme-toggle:hover {
+    background-color: #d4b817;
+}
+
+/* Obsah */
+.container {
+    margin: 100px auto 50px;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Sekce */
+section {
+    margin: 50px 0;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #444;
+}
+
+/* Boxy */
+.box {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.box:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+/* Kontaktní formulář */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+form input,
+form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+form button[type="submit"] {
+    background-color: #f2d22e;
+    color: #000;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+form button[type="submit"]:hover {
+    background-color: #d4b817;
+}
+.form-info {
+    text-align: center;
+    font-size: 0.95em;
+    margin-top: 15px;
+    color: #666;
+}
+
+/* Galerie */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.gallery img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
+.gallery-item {
+    text-align: center;
+}
+.gallery-item p {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #666;
+}
+.gallery-close {
+    text-align: center;
+    margin-top: 20px;
+}
+.gallery-close button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #f2d22e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.gallery-close button:hover {
+    background-color: #d4b817;
+}
+
+/* Tmavý režim */
+body.dark-mode {
+    background: #121212;
+    color: #f0f0f0;
+}
+body.dark-mode .container {
+    background: rgba(30, 30, 30, 0.9);
+    color: #f0f0f0;
+}
+body.dark-mode .box {
+    background: #222;
+    border: 1px solid #444;
+}
+body.dark-mode .box:hover {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+body.dark-mode nav {
+    background-color: rgba(20, 20, 20, 0.9);
+}
+body.dark-mode nav a {
+    color: #f0f0f0;
+}
+body.dark-mode nav a:hover {
+    color: #f2d22e;
+}
+body.dark-mode nav button#theme-toggle {
+    background-color: #444;
+    color: #fff;
+}
+body.dark-mode nav button#theme-toggle:hover {
+    background-color: #666;
+}
+body.dark-mode form input,
+body.dark-mode form textarea {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    border: 1px solid #666;
+}

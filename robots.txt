@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sterky-stavba.netlify.app/sitemap.xml
